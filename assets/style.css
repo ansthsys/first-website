@@ -1,0 +1,219 @@
+@font-face{
+	font-family: 'Roboto-Regular';
+	src: url(font/Roboto-Regular.ttf);
+}
+@font-face{
+	font-family: 'Roboto-Medium';
+	src: url(font/Roboto-Medium.ttf);
+}
+@font-face{
+	font-family: 'NotoSansJP-Light';
+	src: url(font/NotoSansJP-Light.otf);
+}
+@font-face{
+	font-family: 'NotoSansJP-Regular';
+	src: url(font/NotoSansJP-Regular.otf);
+}
+
+
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+header{
+	display: inline;
+	font-family: 'Roboto-Regular';
+}
+nav {
+   background-color: #212738;
+   width: 100%;
+   position: sticky;
+   top: 0;
+   overflow: auto;
+   align-items: center;
+   justify-content: space-between;
+   display: flex;
+}
+.logo{
+	width: 45px;
+	flex-basis: 12.5%;
+	margin: 10px 0px 10px 50px;
+}
+nav ul{
+	flex-basis: 87.5%;
+	text-align: right;
+}
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 30px;
+}
+nav a {
+   font-size: 13pt;
+   font-weight: 400;
+   text-decoration: none;
+   color: #bcbcbc;
+ 
+}
+.iconnav{
+	width: 25px;
+	float: right;
+	margin: 0px 50px 0px 0px;
+}
+nav a:hover{
+	color: #edf2ef;
+}
+main, footer{
+	background-color: #edf2ef;
+	font-family: 'NotoSansJP-Light';
+	font-size: 16pt;
+	color: #212738;
+}
+h2{
+	font-size: 34pt;  
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 500vh;
+
+}
+.home-area, .fungsi-area, .kelebihan-area, .filosofi-area{
+	flex-basis: 20%;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	align-items: center;
+	display: flex;
+}
+.icon1, .icon3{
+	width: 90px;
+	padding: 0px 0px 0px 50px;
+	margin-right: 50px;
+	margin-left: 100px;
+	flex-basis: 45%;
+}
+.icon2, .icon4{
+	width: 90px;
+	padding: 0px 50px 0px 0px;
+	margin-right: 100px;
+	margin-left: 50px;
+	flex-basis: 45%;
+}
+.article-right{
+	flex-basis: 55%;
+	margin: 0px 50px 0px 100px;
+	padding: 0px 0px 0px 50px;
+	text-align: right;
+}
+.article-left{
+	flex-basis: 55%;
+	margin: 0px 100px 0px 50px;
+	padding: 0px 50px 0px 0px;
+	text-align: left;
+}
+.tentang-area{
+	flex-basis: 20%;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+}
+.article-aside{
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	align-items: center;
+}
+.author{
+	width: 250px;
+	margin-top: 125px;
+}
+.footer-area{
+	background-color: #212738;
+	padding: 10px;
+	font-size: 13pt;
+	color: #edf2ef;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 1000px){
+	.logo{
+		width: 35px;
+		margin-left: 20px;
+	}
+	nav ul{
+		text-align: right;
+	}
+	nav li{
+		margin-right: 15px;
+	}
+	nav a{
+		font-size: 11pt;
+		color: #bcbcbc;
+	}
+	.iconnav{
+		width: 20px;
+		margin-right: 20px;
+	}
+	nav a:hover{
+		color: #edf2ef;
+	}
+	.container{
+		height: 380vh;
+	}
+	.home-area, .kelebihan-area{
+		overflow: auto;
+		flex-direction: column;
+		max-height: 80vh;
+	}
+	.fungsi-area{
+		overflow: auto;
+		flex-direction: column-reverse;
+		max-height: 80vh;
+	}
+	.filosofi-area{
+		overflow: auto;
+		flex-direction: column-reverse;
+		max-height: 80vh;
+	}
+	.tentang-area{
+		overflow: auto;
+		flex-direction: column;
+		max-height: 80vh;
+	}
+	.icon1, .icon2, .icon3, .icon4{
+		width: 225px;
+		margin: 125px 0px 10px 0px;
+		padding: 0px 0px 0px 0px;
+	}
+	.author{
+		width: 150px;
+		margin: 80px 0px 10px 0px;
+		padding: 0px 0px 0px 0px;
+	}
+	h2{
+		margin: 20px 30px;
+		font-size: 24pt;
+	}
+	.article-left, .article-right{
+		font-size: 12pt;
+		margin: 15px 15px;
+		text-align: center;
+		padding: 0;
+	}
+	blockquote{
+		margin: 15px 15px;
+		text-align: center;
+		padding: 0;
+		font-size: 12pt;
+	}
+	.footer-area{
+		font-size: 9pt;
+	}
+}
